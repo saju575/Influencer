@@ -1,0 +1,399 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+/* .row{
+    overflow: hidden;
+} */
+
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #fff;
+    
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.sec-padding{
+    padding: 6rem 0;
+}
+
+h1{
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: #3A3A3A;
+
+}
+h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #3A3A3A;
+    margin-bottom: 1.4rem;
+    margin-top: 1rem;
+}
+p{
+    font-size: 1.6rem;
+    color: #3A3A3A;font-weight: 600;
+}
+@media (max-width:1200px) {
+    .container {
+
+        max-width: 85%;
+    }
+
+}
+.btn {
+    display: inline-block;
+    background-color: #E02C6DDE;
+    padding: 1.2rem 4rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 3rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    
+}
+.btn span{
+    margin-left: .8rem;
+}
+
+
+/* nav-section */
+
+.menu-bar,
+
+.logo-cart{
+    display: none;
+}
+.nav-section {
+    
+    padding: 6rem 0;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo img {
+    width: 4.1rem;
+    height: 5.1rem;
+    margin-right: 1.5rem;
+}
+
+.nav .logo span {
+    font-size: 2.4rem;
+    color: #3A3A3A;
+    font-weight: 600;
+    
+}
+
+.nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav .menu a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #3A3A3A;
+
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 2.8rem;
+}
+
+.nav .menu img {
+    height: 5.1rem;
+    width: 5.1rem;
+}
+
+.nav-section .nav .menu-bar .fa-bars {
+    font-size: 2.4rem;
+    color: #3A3A3A;
+}
+.nav-section .nav .logo-cart .fas {
+    font-size: 2.4rem;
+    margin-right: .8rem;
+    color: #3A3A3A;
+}
+
+/* header section */
+.header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.right-h img{
+    width: 98%;
+}
+
+/* brand section */
+hr{
+    color: #3A3A3A;
+    opacity: .5;
+}
+.brand-section .brand{
+    padding: 4rem 0;
+    
+}
+.brand{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* ..collection-section */
+.title-section{
+    padding-bottom: 6rem;
+}
+.collection-section .title-section h2{
+    text-align: center;
+}
+.box-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    
+   
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    padding-bottom: 3rem;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .15);
+    border-radius: 1rem;
+}
+.item p{
+    color: #787885;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.item p.price{
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+.star i{
+    color: rgba(106, 150, 35, 0.945);
+    font-size: 1.4rem;
+    
+}
+.see-more{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.see-more a{
+    color: #E02C6DDE;
+    font-size: 1.8rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: .5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+.see-more span{
+    
+    color: #E02C6DDE;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+/* social section add */
+.last-section {
+
+    padding: 4rem 2rem 1rem;
+}
+
+.social-section {
+
+    padding: 4rem 0;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 2rem;
+
+}
+
+.social-section .s-item {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.s-item i{
+    font-size: 3rem;
+    color: #3A3A3A;
+}
+.social-section p {
+    font-size: 1.8rem;
+    color: #3A3A3A;
+    text-transform: capitalize;
+}
+
+.subscribe-section .title h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+.s-item h4 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: #3A3A3A;
+}
+
+/* footer section */
+.footer-section{
+    background-color: #0A0826;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2,
+
+.footer p{
+    color: #fff;
+
+}
+.footer p{
+    font-weight: 400;
+}
+
+.footer .icon{
+    margin-top: 2rem;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+}
+.footer .icon a{
+    
+    line-height: 3.2rem;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.footer .icon>div{
+    line-height: 3.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius:50%;
+    background-color: #383B4F;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+
+@media (max-width:1024px) {
+    html{
+        font-size: 58%;
+    }
+}
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        grid-template-columns: repeat(1, 1fr);
+
+        justify-items: center;
+        align-items: center;
+    }
+
+    .right-h img {
+        width: 90%;
+    }
+
+    .header .left-h {
+        order: 2;
+        margin-top: 3rem;
+    }
+    .nav-section .nav .menu{
+        display: none;
+    }
+    .nav-section .nav .logo-cart {
+        display: block;
+    }
+    .nav-section .nav .menu-bar {
+        display: block;
+    }
+}
+@media (max-width:600px) {
+    .social-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .social-section>div {
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:420px) {
+    html{
+        font-size: 48%;
+    }
+    h1{
+        font-size: 4.8rem;
+    }
+}
+@media (max-width:380px) {
+    .nav .logo {
+        display: none;
+        
+    }
+}
