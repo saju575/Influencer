@@ -166,6 +166,9 @@ hr{
     color: #3A3A3A;
     opacity: .5;
 }
+.brand-section{
+    padding: 2rem 0;
+}
 .brand-section .brand{
     padding: 4rem 0;
     
